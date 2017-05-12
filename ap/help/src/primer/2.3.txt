@@ -1,0 +1,1 @@
+trace_out('Hello World!\n')

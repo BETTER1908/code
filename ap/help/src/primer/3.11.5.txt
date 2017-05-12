@@ -1,0 +1,12 @@
+local commands = {};
+commands[ID_PROPERTY] = function(scene)
+	show_dlg();
+end
+commands[ID_ADD] = function(scene)
+	add_object();
+end
+function on_command(id,scene)
+	if type(commands[id])=="function" then
+		commands[id](scene);
+	end
+end

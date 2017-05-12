@@ -1,0 +1,8 @@
+function on_mousemove(scene,flags,x,y)
+	if type(start_pt)=="table" then
+		local pt = snap(scene,x,y);
+		draw_drag(scene);
+		set_drag_line(start_pt,pt);
+		draw_drag(scene);
+	end 
+end

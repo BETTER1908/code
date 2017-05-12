@@ -1,0 +1,8 @@
+function on_lbuttonup(scene,flags,x,y)
+	if type(start_pt)=="table" then
+		local x,y,z = client_2_world(scene,x,y);
+		local pt = {x=x,y=y,z=z};
+		add_object(start_pt,pt);
+		start_pt = nil;
+	end 
+end

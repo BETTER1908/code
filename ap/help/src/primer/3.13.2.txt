@@ -1,0 +1,7 @@
+local color_lab = iup.label{title="Color:",size="50X"};
+local color_r_lab = iup.label{title="R:"};
+local color_r_txt = iup.text{expand="Horizontal",readonly="Yes",bgcolor="192 192 192"};
+local color_g_lab = iup.label{title="G:"};
+local color_g_txt = iup.text{expand="Horizontal",readonly="Yes",bgcolor="192 192 192"};
+local color_b_lab = iup.label{title="B:"};
+local color_b_txt = iup.text{expand="Horizontal",readonly="Yes",bgcolor="192 192 192"};

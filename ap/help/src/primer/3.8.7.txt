@@ -1,0 +1,7 @@
+ocal scene = new_child(frm,"New1");
+local k,v = 1,makelist(scene,get_shape(scene));
+local gl = require "luaext.gl"
+function render_objs()
+	gl.glLoadName(k)
+	gl.glCallList(v)
+end

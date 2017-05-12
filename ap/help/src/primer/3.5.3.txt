@@ -1,0 +1,7 @@
+local scene = new_child(frm,"New1");
+local k,v = 1,makelist(scene,object);
+local gl = require "luaext.gl"
+function render_objs(scene)
+	gl.glLoadName(k)
+	gl.glCallList(v)
+end

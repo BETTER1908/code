@@ -1,0 +1,3 @@
+function on_paint()
+	del_drag_line();
+end

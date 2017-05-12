@@ -1,0 +1,28 @@
+add_menu(
+	frm,
+	{	
+		name = "Cube",
+		nposition = 2,
+		items = 
+		{	
+			{id=ID_ADD,name="Add"},
+			{id=ID_DRAW,name="Draw"},
+			{id=ID_PROPERTY,name="Property"},
+		},
+	}
+);
+crt_toolbar(frm,
+	{
+		bmpname = "toolbar1.bmp",
+		nbmps = 3, 
+		dxButton = 0, 
+		dyButton = 0,
+		dxBitmap = 16,
+		dyBitmap = 16,
+		buttons = {
+			{iBitmap=2,idCommand=ID_ADD,iString="Add",fsState=TBSTATE_ENABLED,fsStyle=BTNS_BUTTON,},
+			{iBitmap=3,idCommand=ID_DRAW,iString="Draw",fsState=TBSTATE_ENABLED,fsStyle=BTNS_BUTTON,},
+			{iBitmap=5,idCommand=ID_PROPERTY,iString="Property",fsState=TBSTATE_ENABLED,fsStyle=BTNS_BUTTON,},
+		},
+	}
+);

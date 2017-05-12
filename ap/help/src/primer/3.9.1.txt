@@ -1,0 +1,1 @@
+local ID_PROPERTY = ID+1;

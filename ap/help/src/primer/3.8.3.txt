@@ -1,0 +1,35 @@
+local iup = require"iuplua"
+local pt1_lab = iup.label{title="Point1:",size="50x"};
+local pt1_x_lab = iup.label{title="X:"};
+local pt1_x_txt = iup.text{expand="Horizontal"};
+local pt1_y_lab = iup.label{title="Y:"};
+local pt1_y_txt = iup.text{expand="Horizontal"};
+local pt1_z_lab = iup.label{title="Z:"};
+local pt1_z_txt = iup.text{expand="Horizontal"};
+local pt2_lab = iup.label{title="Point2:",size="50X"};
+local pt2_x_lab = iup.label{title="X:"};
+local pt2_x_txt = iup.text{expand="Horizontal"};
+local pt2_y_lab = iup.label{title="Y:"};
+local pt2_y_txt = iup.text{expand="Horizontal"};
+local pt2_z_lab = iup.label{title="Z:"};
+local pt2_z_txt = iup.text{expand="Horizontal"};
+local color_lab = iup.label{title="Color:",size="50X"};
+local color_r_lab = iup.label{title="R:"};
+local color_r_txt = iup.text{expand="Horizontal"};
+local color_g_lab = iup.label{title="G:"};
+local color_g_txt = iup.text{expand="Horizontal"};
+local color_b_lab = iup.label{title="B:"};
+local color_b_txt = iup.text{expand="Horizontal"};
+local ok_btn = iup.button{title="OK",size="100X"};
+local cancel_btn = iup.button{title="Cancel",size="100X"};
+local dlg = iup.dialog{
+	title = "Property";
+	size = "500X100";
+	margin = "5X5";
+	iup.vbox{
+		iup.hbox{pt1_lab,pt1_x_lab,pt1_x_txt,pt1_y_lab,pt1_y_txt,pt1_z_lab,pt1_z_txt};
+		iup.hbox{pt2_lab,pt2_x_lab,pt2_x_txt,pt2_y_lab,pt2_y_txt,pt2_z_lab,pt2_z_txt};
+		iup.hbox{color_lab,color_r_lab,color_r_txt,color_g_lab,color_g_txt,color_b_lab,color_b_txt};
+		iup.hbox{iup.fill{},ok_btn,cancel_btn};
+	};
+}

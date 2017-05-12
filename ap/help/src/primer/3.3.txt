@@ -1,0 +1,2 @@
+new_child(frm,"New1");
+

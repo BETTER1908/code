@@ -1,0 +1,3 @@
+function on_lbuttondown(scene,flags,x,y)
+	scene_select(scene,x,y,1,1,1);
+end

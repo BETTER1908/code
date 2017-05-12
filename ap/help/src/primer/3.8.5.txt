@@ -1,0 +1,15 @@
+function ok_btn:action()
+	x1 = pt1_x_txt.value;
+	y1 = pt1_y_txt.value;
+	z1 = pt1_z_txt.value;
+	x2 = pt2_x_txt.value;
+	y2 = pt2_y_txt.value;
+	z2 = pt2_z_txt.value;
+	r = color_r_txt.value;
+	g = color_g_txt.value;
+	b = color_b_txt.value;
+	dlg:hide();
+end
+function cancel_btn:action()
+	dlg:hide();
+end

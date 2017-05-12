@@ -1,0 +1,11 @@
+add_menu(
+	frm,
+	{	
+		name = "Cube",
+		nposition = 2,
+		items = 
+		{	
+			{id=ID_PROPERTY,name="Property"},
+		},
+	}
+);

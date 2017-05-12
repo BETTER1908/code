@@ -1,0 +1,3 @@
+function select_main(i)
+	select_object(i)
+end
