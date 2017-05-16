@@ -1,5 +1,0 @@
-function frm_on_command(id,scene)
-	if type(frmcommands[id])=="function" then
-		frmcommands[id](scene);
-	end
-end

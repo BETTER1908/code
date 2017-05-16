@@ -1,5 +1,0 @@
-function on_command(id,scene)
-	if id==ID_PROPERTY then
-		show_dlg();
-	end
-end

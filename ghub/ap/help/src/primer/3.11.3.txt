@@ -1,7 +1,0 @@
-local gl = require "luaext.gl"
-function render_objs()
-	for i,v in ipairs(objects) do
-		gl.glLoadName(v.glname);
-		gl.glCallList(v.gllist);
-	end
-end

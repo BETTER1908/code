@@ -1,9 +1,0 @@
-function select_object(i)
-	objects[i].color.r = (objects[i].color.r-0.5)%1.5;
-	objects[i].color.g = (objects[i].color.g-0.5)%1.5;
-	objects[i].color.b = (objects[i].color.b-0.5)%1.5;
-	local shape = get_shape(objects[i].pt1,objects[i].pt2,objects[i].color);
-	local glname,gllist = i,makelist(scene,shape);
-	objects[i].gllist = gllist;
-	scene_onpaint(scene);
-end

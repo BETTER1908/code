@@ -1,3 +1,0 @@
-commands[ID_DRAW] = function(scene)
-	start_pt = true;
-end

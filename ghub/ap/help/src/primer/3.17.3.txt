@@ -1,5 +1,0 @@
-function render_drags()
-	if drag_line then
-		gl.glCallList(drag_line);
-	end
-end
